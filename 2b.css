@@ -1,0 +1,178 @@
+.costas{
+    background-image: url(https://pm1.aminoapps.com/6843/f7a909f1fd1615d5e7b736105ff6a12484569e53v2_hq.jpg) ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.t {
+    
+
+  background-color: #1DA1F2; /* Azul do Twitter */
+  color: white;              /* Texto branco */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 9999px;     /* Totalmente arredondado */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.t:hover {
+  background-color: #0d8ddb; /* Tom mais escuro no hover */
+}
+
+.t:active {
+  background-color: #0b7bc1; /* Tom mais escuro ao clicar */
+}
+
+.tt {
+  background-color: #000;       /* Fundo preto */
+  color: white;                 /* Texto branco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tt::before,
+.tt::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 4px;
+  left: 4px;
+  background: #00f2ea; /* azul neon */
+  z-index: -1;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.tt::after {
+  top: -4px;
+  left: -4px;
+  background: #ff0050; /* rosa neon */
+}
+
+.tt:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(255, 0, 80, 0.5);
+}
+
+.i {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+}
+
+.i:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.g {
+  background-color: #000;  /* Preto */
+  color: #fff;             /* Branco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.g:hover {
+  background-color: #24292f; /* Cor padrão de hover no GitHub */
+  transform: translateY(-2px);
+}
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f2f2f2;
+      font-family: sans-serif;
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: center;   /* Alinha horizontalmente */
+      padding-top: 150px;        /* Distância do topo */
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;    /* Um embaixo do outro */
+      align-items: center;
+      gap: 32px;                 /* Espaço entre botões */
+    }
+
+    .custom-button {
+      font-size: 22px;           /* Texto maior */
+      padding: 50px 70px;        /* Botão maior */
+      min-width: 300px;          /* Largura maior */
+      border-radius: 12px;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.2s ease;
+    }
+
+    .custom-button:hover {
+      transform: scale(1.05);
+    }
+
+    .t {
+      background-color: #1DA1F2;
+      color: white;
+    }
+
+    .tt {
+      background-color: #000;
+      color: white;
+    }
+
+    .i {
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+      color: white;
+    }
+
+    .g {
+      background-color: #000;
+      color: white;
+    }
