@@ -1,5 +1,5 @@
 .costas{
-    background-image: url(https://pm1.aminoapps.com/6843/f7a909f1fd1615d5e7b736105ff6a12484569e53v2_hq.jpg) ;
+    background-image: url(https://i.pinimg.com/736x/ec/0b/9a/ec0b9adaaf49982914401ad7958b4783.jpg) ;
     background-repeat: no-repeat ;
     background-size: cover;
 }
@@ -239,10 +239,31 @@
       z-index: 0;
     }
 
+    .p {
+  background-color: #E60023;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 24px; /* Bordas arredondadas */
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.p:hover {
+  background-color: #c4001d;
+  transform: translateY(-2px);
+}
+
     .t,
-.tt,
-.i,
-.g {
+    .tt,
+    .i,
+    .g, 
+    .p {
   font-size: 25px;         /* Texto maior */
   padding: 21px 20px;      /* Botão mais alto e largo */
   min-width: 200px;        /* Largura mínima */
