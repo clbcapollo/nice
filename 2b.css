@@ -3,6 +3,28 @@
     background-repeat: no-repeat ;
     background-size: cover;
 }
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.perfil-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.perfil-bloco .perfil {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
 .t {
     
 
@@ -176,3 +198,59 @@
       background-color: #000;
       color: white;
     }
+    
+    .container {
+      position: relative;
+      width: max-content;
+      margin: 100px auto;
+    }
+
+    .perfil-container {
+      position: absolute;
+      top: -30px; /* Ajuste para posicionar acima do botão */
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: -10px;
+    }
+
+    .perfil {
+      width: 60px;
+      
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  padding: 1px; /* Cria um anel ao redor */
+  background-color: white; /* Ou qualquer cor que você quiser como “aura” */
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+    }
+
+    .t,
+.tt,
+.i,
+.g {
+  font-size: 25px;         /* Texto maior */
+  padding: 21px 20px;      /* Botão mais alto e largo */
+  min-width: 200px;        /* Largura mínima */
+}
+
+.perfil-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Espaço entre imagem e botões */
+}
